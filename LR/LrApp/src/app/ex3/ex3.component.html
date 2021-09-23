@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="body">
+    <h2>{{person.name}}</h2>
+    <p>{{person.bio}}</p>
+    <ul>
+      <li *ngFor="let quote of person.quotes">{{quote}}</li>
+    </ul>
+  </div>
+  <img src={{person.imagePath}}>
+</div>

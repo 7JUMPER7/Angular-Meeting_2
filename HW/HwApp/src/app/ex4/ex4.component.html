@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="body">
+    <h2>{{person.name}}</h2>
+    <p>{{person.bio}}</p>
+    <ul>Quotes:
+      <li *ngFor="let quote of person.quotes">{{quote}}</li>
+    </ul>
+    <ul>Links:
+      <li *ngFor="let link of person.links">
+        <a href={{link}} target="blanck">{{getLinkDomain(link)}}</a>
+      </li>
+    </ul>
+  </div>
+  <img src={{person.imagePath}}>
+</div>
